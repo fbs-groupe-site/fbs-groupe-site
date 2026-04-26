@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FBS GROUPE SARLU - Autres services</title>
+
+  <!-- Feuille de style -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- En-tête -->
+  <header>
+    <div class="conteneur contenu-entete">
+      <div class="logo">
+        <h1>FBS GROUPE SARLU</h1>
+        <p>Autres services</p>
+      </div>
+
+      <!-- Bouton menu -->
+      <button class="bouton-menu" id="boutonMenu" aria-label="Ouvrir le menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Navigation -->
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="informatique.html">Informatique</a></li>
+          <li><a href="construction.html">Construction</a></li>
+          <li><a href="services.html">Autres services</a></li>
+          <li><a href="inscription.html">Inscription</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Bannière -->
+  <section class="banniere-page services">
+    <div class="conteneur">
+      <h2>Autres services</h2>
+      <p>Des prestations variées pour répondre à plusieurs besoins pratiques et professionnels.</p>
+    </div>
+  </section>
+
+  <!-- Présentation -->
+  <section>
+    <div class="conteneur">
+      <div class="image-texte">
+        <img src="IMAGES/Services.avif" alt="Illustration services divers" title="Usine multiservices">
+        <div>
+          <h3>Présentation du domaine</h3>
+          <p>
+            En plus de l’informatique et de la construction, FBS GROUPE SARLU propose
+            d’autres services utiles dans la vie économique et sociale.
+          </p>
+          <p>
+            Ces activités concernent notamment le transport, le nettoyage, l’agriculture,
+            l’élevage et le commerce général.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prestations -->
+  <section>
+    <div class="conteneur">
+      <div class="titre-section">
+        <h2>Nos autres prestations</h2>
+      </div>
+
+      <div class="grille-3">
+        <div class="carte">
+          <i class="fas fa-truck-fast"></i>
+          <h3>Transport et logistique</h3>
+          <p>Organisation de transports et accompagnement logistique selon les besoins des clients.</p>
+        </div>
+
+        <div class="carte">
+          <i class="fas fa-broom"></i>
+          <h3>Nettoyage et assainissement</h3>
+          <p>Services de propreté, entretien et amélioration du cadre de vie et de travail.</p>
+        </div>
+
+        <div class="carte">
+          <i class="fas fa-seedling"></i>
+          <h3>Agriculture et commerce</h3>
+          <p>Activités liées à l’agriculture, à l’élevage et au commerce général.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Utilité -->
+  <section>
+    <div class="conteneur">
+      <h2 class="titre-simple">Pourquoi ces services sont utiles ?</h2>
+      <p>
+        Ces prestations répondent à des besoins concrets du quotidien. Elles permettent
+        d’apporter des solutions pratiques, rapides et adaptées dans plusieurs secteurs d’activité.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="conteneur">
+      <div class="titre-section">
+        <h2>Contact</h2>
+        <p>Vous pouvez nous écrire directement.</p>
+      </div>
+
+      <div class="boite-contact">
+        <div class="carte">
+          <div class="element-info">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Adresse :</strong><br>
+              Le centre est situé à cheval entre l'UJNK et l’Hôtel Buffet de la Gare, Kankan, Guinée
+            </div>
+          </div>
+
+          <div class="element-info">
+            <i class="fas fa-phone"></i>
+            <div>
+              <strong>Téléphones :</strong><br>
+              +33 7 80 41 96 88<br>
+              +224 623 85 41 35
+            </div>
+          </div>
+
+          <div class="element-info">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email :</strong><br>
+              fodebangalysouare436@gmail.com
+            </div>
+          </div>
+        </div>
+
+        <form id="formulaireContact">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+
+          <label for="sujet">Sujet</label>
+          <select id="sujet">
+            <option>Demande générale</option>
+            <option>Information sur les services</option>
+            <option>Partenariat</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" required></textarea>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2026 FBS GROUPE SARLU - Tous droits réservés</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

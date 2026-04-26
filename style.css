@@ -1,0 +1,426 @@
+/* COULEURS DU SITE */
+:root {
+  --bleu: #1f3c88;
+  --vert: #2a9d8f;
+  --rouge: #e63946;
+  --blanc: #ffffff;
+  --gris-clair: #f7f7f7;
+  --gris: #666;
+  --noir: #222;
+}
+
+/* RÉGLAGES GÉNÉRAUX */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--gris-clair);
+  color: var(--noir);
+  line-height: 1.6;
+}
+
+/* Conteneur principal */
+.conteneur {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* EN-TÊTE */
+header {
+  background-color: var(--blanc);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.contenu-entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  position: relative;
+}
+
+.logo h1 {
+  color: var(--bleu);
+  font-size: 1.4rem;
+}
+
+.logo p {
+  color: var(--gris);
+  font-size: 0.9rem;
+}
+
+/* MENU DE NAVIGATION */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--noir);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--vert);
+}
+
+/* Bouton menu mobile */
+.bouton-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: var(--bleu);
+  cursor: pointer;
+}
+
+/* BANNIÈRES */
+.banniere,
+.banniere-page {
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Image de fond de chaque page */
+.accueil {
+  background: linear-gradient(rgba(31, 61, 136, 0.664), rgba(31, 61, 136, 0.664)), 
+    url("IMAGES/fond_cyber.jpeg");
+    background-size: contain;
+    background-position: center;
+}
+
+.informatique {
+  background: linear-gradient(rgba(31, 60, 136, 0.85), rgba(31, 60, 136, 0.85)), 
+    url("IMAGES/formation_informatique.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.construction {
+  background: linear-gradient(rgba(31, 61, 136, 0.664), rgba(31, 61, 136, 0.664)), 
+    url("IMAGES/fond_construction.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.services {
+  background: linear-gradient(rgba(31, 60, 136, 0.85), rgba(31, 60, 136, 0.85)), 
+    url("IMAGES/font_service.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.inscription-page {
+  background: linear-gradient(rgba(249, 249, 250, 0), rgba(106, 119, 153, 0.85)),
+    url("IMAGES/inscripyion.jpg");
+}
+
+.banniere h2,
+.banniere-page h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.banniere p,
+.banniere-page p {
+  max-width: 700px;
+  margin: 0 auto 25px;
+}
+
+/* BOUTONS */
+.bouton {
+  display: inline-block;
+  background-color: var(--rouge);
+  color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.petit-bouton {
+  margin-top: 15px;
+  padding: 10px 16px;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 0;
+}
+
+.titre-section {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.titre-section h2,
+.titre-simple {
+  color: var(--bleu);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.titre-section p {
+  color: var(--gris);
+}
+
+/* CARTES / SERVICES */
+.grille-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.carte {
+  background-color: var(--blanc);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.carte i {
+  font-size: 2rem;
+  color: var(--vert);
+  margin-bottom: 15px;
+}
+
+.carte h3 {
+  color: var(--bleu);
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+/* BLOCS DES INFORMATIONS LIEES AUX IMAGES ET TEXTES */
+.contenu-direction,
+.image-texte,
+.boite-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.direction img,
+.image-texte img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Image un peu plus petite */
+.image-texte img {
+  max-width: 450px;
+  height: 280px;
+  object-position: center top;
+}
+
+.texte-direction {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ÉQUIPE */
+.equipe {
+  background-color: #f3f3f3;
+  padding: 70px 0;
+}
+
+.grille-equipe {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.membre {
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.membre img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.infos-membre {
+  background-color: #efefef;
+  padding: 20px;
+}
+
+.membre h3 {
+  font-weight: bold;
+}
+
+.membre .poste {
+  color: #2f5aa8;
+}
+
+.membre a {
+  color: #2f5aa8;
+  decoration : none;
+  background-position: center;
+}
+
+/*FORMULAIRE */
+form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: var(--bleu);
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background-color: var(--bleu);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button {
+  width: 100%;
+}
+
+/* PIED DE PAGE */
+footer {
+  background-color: var(--bleu);
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* VERSION TABLETTE */
+@media (max-width: 900px) {
+  .grille-3,
+  .image-texte,
+  .contenu-direction,
+  .boite-contact,
+  .grille-equipe {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* VERSION MOBILE */
+@media screen and (max-width: 1200px) {
+  .bouton-menu {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    right: 5%;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .banniere h2,
+  .banniere-page h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.formations-info {
+  padding: 60px 0;
+  background: #f7f7f7;
+}
+
+.titre-categorie {
+  color: #1f3c88;
+  margin: 40px 0 20px;
+  font-size: 1.5rem;
+}
+
+.grille-formations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.formation {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.formation h4 {
+  color: #1f3c88;
+  margin-bottom: 12px;
+  font-size: 1.15rem;
+}
+
+.formation p {
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.infos-inscription {
+  background: white;
+  margin-top: 40px;
+  padding: 25px;
+  border-left: 5px solid #1f3c88;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.infos-inscription h3 {
+  color: #1f3c88;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 900px) {
+  .grille-formations {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .grille-formations {
+    grid-template-columns: 1fr;
+  }
+}

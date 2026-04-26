@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription - FBS GROUPE SARLU</title>
+
+  <!-- Feuille de style -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- En-tête -->
+  <header>
+    <div class="conteneur contenu-entete">
+      <div class="logo">
+        <h1>FBS GROUPE SARLU</h1>
+        <p>Des services simples, sérieux et professionnels</p>
+      </div>
+
+      <!-- Bouton menu -->
+      <button class="bouton-menu" id="boutonMenu" aria-label="Ouvrir le menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Navigation -->
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="informatique.html">Informatique</a></li>
+          <li><a href="construction.html">Construction</a></li>
+          <li><a href="services.html">Autres services</a></li>
+          <li><a href="inscription.html">Inscription</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Bannière -->
+  <section class="banniere-page inscription-page">
+    <div class="conteneur">
+      <h2>Inscription aux formations</h2>
+      <p>Remplissez ce formulaire pour rejoindre nos formations professionnelles.</p>
+    </div>
+  </section>
+
+
+  <!-- Formulaire -->
+  <section>
+    <div class="conteneur">
+      <div class="titre-section">
+        <h2>Formulaire d'inscription</h2>
+      </div>
+
+      <form>
+        <label for="nom-complet">Nom complet</label>
+        <input type="text" id="nom-complet" placeholder="Votre nom et prénom" required>
+
+        <label for="telephone">Téléphone</label>
+        <input type="tel" id="telephone" placeholder="Votre numéro" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Votre email">
+
+        <label for="formation">Formation choisie</label>
+        <select id="formation" required>
+          <option value="">Choisir une formation</option>
+          <option>Informatique</option>
+          <option>Maintenance</option>
+          <option>Infographie</option>
+          <option>Développement personnel</option>
+          <option>Anglais</option>
+          <option>Autre</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Votre message..."></textarea>
+
+        <button type="submit">S'inscrire</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact rapide -->
+  <section class="direction">
+    <div class="conteneur">
+      <div class="titre-section">
+        <h2>Contact rapide</h2>
+      </div>
+
+      <div class="contenu-direction">
+        <div>
+          <p><strong>Email :</strong> fbsgroupsarlu@gmail.com</p>
+          <p><strong>Téléphone :</strong> 623 85 41 35</p>
+          <p><strong>Localisation :</strong> Kankan, Guinée</p>
+        </div>
+
+        <div class="texte-direction">
+          <p>
+            Vous pouvez également vous inscrire directement en nous contactant.
+            Notre équipe est disponible pour vous accompagner.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2026 FBS GROUPE SARLU - Tous droits réservés</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
