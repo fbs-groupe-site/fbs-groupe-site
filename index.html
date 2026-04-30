@@ -5,30 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FBS GROUPE SARLU - Accueil</title>
 
-  <!-- Feuille de style principale pour toutes les pages du site -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- Bibliothèque d’icônes -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
   <!-- En-tête -->
   <header>
     <div class="conteneur contenu-entete">
 
-      <!-- Logo et nom de l’entreprise -->
       <div class="logo">
-        <h1>FBS GROUPE SARLU</h1>
-        <p>Des services simples, sérieux et professionnels</p>
+        <img src="IMAGES/Logo.png" alt="Logo FBS GROUPE SARLU">
+        <div class="texte-logo">
+          <h1>FBS GROUPE SARLU</h1>
+          <p>Des services simples, sérieux et professionnels</p>
+        </div>
       </div>
 
-      <!-- Bouton du menu sur téléphone -->
       <button class="bouton-menu" id="boutonMenu" aria-label="Ouvrir le menu">
         <i class="fas fa-bars"></i>
       </button>
 
-      <!-- Menu de navigation à partir de la page principal-->
       <nav>
         <ul id="menu">
           <li><a href="index.html">Accueil</a></li>
@@ -51,15 +50,55 @@
         avec des services utiles, concrets et adaptés à leurs besoins en République de Guinée
         et dans la sous-région.
       </p>
-      <a href="#mon_ancre" class="bouton">Découvrir nos services</a>
+      <a href="#domaines" class="bouton">Voir nos domaines</a>
+    </div>
+  </section>
+
+  <!-- Présentation de l'entreprise -->
+  <section class="presentation-entreprise">
+    <div class="conteneur">
+
+      <div class="titre-section">
+        <h2>Présentation de l’entreprise</h2>
+        <p>Une entreprise polyvalente au service de vos besoins</p>
+      </div>
+
+      <div class="presentation-bloc">
+        <div class="presentation-logo">
+          <img src="IMAGES/Logo.png" alt="Logo FBS GROUPE SARLU">
+        </div>
+
+        <div class="presentation-texte">
+          <h3>Qui sommes-nous ?</h3>
+
+          <p>
+            FBS GROUPE SARLU est une entreprise basée à Kankan, en République de Guinée.
+            Elle intervient dans plusieurs domaines afin d’apporter des solutions simples,
+            pratiques et professionnelles.
+          </p>
+
+          <p>
+            Nous proposons des services en informatique, formation, construction,
+            immobilier, transport, logistique, agriculture et commerce.
+          </p>
+
+          <p>
+            Notre objectif est d’accompagner les particuliers, les entreprises et les
+            institutions avec sérieux, efficacité et engagement.
+          </p>
+
+          <a href="inscription.html" class="bouton bouton-secondaire">Nous contacter / s’inscrire</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- Présentation des domaines -->
-  <section>
+  <section id="domaines">
     <div class="conteneur">
       <div class="titre-section">
-        <h2 id="mon_ancre"> Nos principaux domaines</h2>
+        <h2>Nos principaux domaines</h2>
         <p>Choisissez un domaine pour en savoir plus.</p>
       </div>
 
@@ -89,9 +128,9 @@
         <div class="carte">
           <i class="fas fa-user-plus"></i>
           <h3>Inscription</h3>
-          <p>Inscrivez-vous pour découvrir nos services.</p>
+          <p>Inscrivez-vous pour découvrir nos services et formations.</p>
           <a href="inscription.html" class="bouton petit-bouton">Voir la page</a>
-        </div>        
+        </div>
 
       </div>
     </div>
@@ -147,12 +186,71 @@
     </div>
   </section>
 
-  <!-- Pied de page -->
-  <footer>
-    <p>&copy; 2026 FBS GROUPE SARLU - Tous droits réservés</p>
-  </footer>
+<!-- Pied de page -->
+<footer class="footer">
+  <div class="conteneur footer-contenu">
 
-  <!-- Fichier JavaScript -->
+    <div class="footer-bloc">
+      <h3>FBS GROUPE SARLU</h3>
+      <p>Des services simples, sérieux et professionnels.</p>
+      <p>Formation, construction, transport, logistique et autres prestations.</p>
+    </div>
+
+    <div class="footer-bloc">
+      <h4>Contact</h4>
+
+      <p>
+        <i class="fas fa-phone"></i>
+        <a href="tel:+224623854135">+224 623 85 41 35</a>
+      </p>
+
+      <p>
+        <i class="fas fa-phone"></i>
+        <a href="tel:+224621744176">+224 621 74 41 76</a>
+      </p>
+
+      <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:fbsgroupsarlu@gmail.com">fbsgroupsarlu@gmail.com</a>
+      </p>
+
+      <p>
+        <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/224623854135" target="_blank">Contact WhatsApp</a>
+      </p>
+    </div>
+
+    <div class="footer-bloc">
+      <h4>Adresse</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Kankan, Guinée</p>
+      <p>Entre l’UJNK et l’Hôtel Buffet de la Gare</p>
+    </div>
+
+    <div class="footer-bloc">
+      <h4>Liens utiles</h4>
+      <p><a href="index.html">Accueil</a></p>
+      <p><a href="informatique.html">Formations</a></p>
+      <p><a href="inscription.html">Inscription</a></p>
+      <p><a href="services.html#contact">Contact</a></p>
+    </div>
+
+    <div class="footer-bloc">
+      <h4>Réseaux sociaux</h4>
+      <div class="reseaux">
+        <a href="https://www.facebook.com/share/1CaRw7N6yn/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/224623854135" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bas">
+    <p>&copy; 2026 FBS GROUPE SARLU - Tous droits réservés</p>
+  </div>
+</footer>
+
   <script src="script.js"></script>
 </body>
 </html>
