@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Inscription - FBS GROUPE SARLU</title>
+  <meta name="description" content="Inscription aux services et formations de FBS GROUPE SARLU à Kankan en Guinée.">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="entete">
+  <div class="conteneur contenu-entete">
+
+    <a href="index.html" class="logo">
+      <img src="IMAGES/Logo.png" alt="Logo FBS GROUPE SARLU">
+      <div class="texte-logo">
+        <h1>FBS GROUPE SARLU</h1>
+        <p>Inscription et contact</p>
+      </div>
+    </a>
+
+    <button class="bouton-menu" id="boutonMenu" aria-label="Ouvrir le menu">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="navigation">
+      <ul id="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="informatique.html">Informatique</a></li>
+        <li><a href="construction.html">Construction</a></li>
+        <li><a href="services.html">Autres services</a></li>
+        <li><a class="actif" href="inscription.html">Inscription</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+  <section class="banniere-page inscription-page">
+    <div class="conteneur">
+      <span class="badge">Inscription • Demande • Contact</span>
+      <h2>Créer une demande d’inscription</h2>
+      <p>
+        Remplissez le formulaire pour vous inscrire à une formation,
+        demander un service ou obtenir plus d’informations.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="conteneur">
+
+      <div class="formulaire-inscription">
+
+        <h2><i class="fas fa-user-plus"></i> Formulaire d’inscription</h2>
+        <p>
+          Les champs marqués avec une étoile (*) sont obligatoires.
+          Vos informations restent confidentielles.
+        </p>
+
+        <form id="formInscription" action="#" method="POST">
+
+          <div class="double-champ">
+
+            <div class="groupe-champ">
+              <label for="nom"><i class="fas fa-user"></i> Nom *</label>
+              <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+            </div>
+
+            <div class="groupe-champ">
+              <label for="prenom"><i class="fas fa-user"></i> Prénom *</label>
+              <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
+            </div>
+
+          </div>
+
+          <div class="double-champ">
+
+            <div class="groupe-champ">
+              <label for="email"><i class="fas fa-envelope"></i> Adresse e-mail *</label>
+              <input type="email" id="email" name="email" required placeholder="exemple@email.com">
+            </div>
+
+            <div class="groupe-champ">
+              <label for="telephone"><i class="fas fa-phone"></i> Téléphone *</label>
+              <input type="tel" id="telephone" name="telephone" required placeholder="+224 6XX XX XX XX">
+            </div>
+
+          </div>
+
+          <div class="groupe-champ">
+            <label for="service"><i class="fas fa-briefcase"></i> Service souhaité *</label>
+            <select id="service" name="service" required>
+              <option value="">-- Choisissez un service --</option>
+              <option value="informatique">Informatique et formation</option>
+              <option value="construction">Construction et immobilier</option>
+              <option value="transport">Transport et logistique</option>
+              <option value="nettoyage">Nettoyage et assainissement</option>
+              <option value="agriculture">Agriculture et commerce</option>
+              <option value="autre">Autre demande</option>
+            </select>
+          </div>
+
+          <div class="groupe-champ">
+            <label for="formation"><i class="fas fa-graduation-cap"></i> Formation souhaitée</label>
+            <select id="formation" name="formation">
+              <option value="">-- Si votre demande concerne une formation --</option>
+              <option value="word-excel">Windows - Word - Excel</option>
+              <option value="powerpoint-publisher">PowerPoint - Publisher</option>
+              <option value="access">Access</option>
+              <option value="outlook">Outlook</option>
+              <option value="internet">Exploitation Internet</option>
+              <option value="tap-touch">Tap Touch</option>
+              <option value="excel-avance">Excel avancé</option>
+              <option value="spss">SPSS</option>
+              <option value="sage">SAGE Comptabilité</option>
+              <option value="photoshop">Photoshop</option>
+              <option value="filmora">Filmora</option>
+            </select>
+          </div>
+
+          <div class="groupe-champ">
+            <label for="message"><i class="fas fa-comment"></i> Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre besoin ou votre demande..."></textarea>
+          </div>
+
+          <div class="groupe-champ checkbox">
+            <label>
+              <input type="checkbox" name="newsletter" value="oui">
+              Je souhaite recevoir les informations et offres de FBS GROUPE SARLU.
+            </label>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            <i class="fas fa-paper-plane"></i> Envoyer ma demande
+          </button>
+
+          <p class="mention">
+            * Champs obligatoires. Ce formulaire est une démonstration côté site.
+          </p>
+
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+  <footer class="footer">
+    <div class="conteneur footer-contenu">
+
+      <div class="footer-bloc">
+        <h3>FBS GROUPE SARLU</h3>
+        <p>Des services simples, sérieux et professionnels.</p>
+        <p>Formation, construction, transport, logistique et autres prestations.</p>
+      </div>
+
+      <div class="footer-bloc">
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone"></i><a href="tel:+224623854135">+224 623 85 41 35</a></p>
+        <p><i class="fas fa-phone"></i><a href="tel:+224621744176">+224 621 74 41 76</a></p>
+        <p><i class="fas fa-envelope"></i><a href="mailto:fbsgroupsarlu@gmail.com">fbsgroupsarlu@gmail.com</a></p>
+        <p><i class="fab fa-whatsapp"></i><a href="https://wa.me/224623854135" target="_blank">WhatsApp</a></p>
+      </div>
+
+      <div class="footer-bloc">
+        <h4>Adresse</h4>
+        <p><i class="fas fa-map-marker-alt"></i>Kankan, Guinée</p>
+        <p>Entre l’UJNK et l’Hôtel Buffet de la Gare</p>
+      </div>
+
+      <div class="footer-bloc">
+        <h4>Liens utiles</h4>
+        <p><a href="index.html">Accueil</a></p>
+        <p><a href="informatique.html">Formations</a></p>
+        <p><a href="inscription.html">Inscription</a></p>
+        <p><a href="services.html#contact">Contact</a></p>
+      </div>
+
+      <div class="footer-bloc">
+        <h4>Réseaux sociaux</h4>
+        <div class="reseaux">
+          <a href="https://www.facebook.com/share/1CaRw7N6yn/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/224623854135" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bas">
+      <p>&copy; 2026 FBS GROUPE SARLU - Tous droits réservés</p>
+    </div>
+  </footer>
+  
+<script src="script.js"></script>
+
+</body>
+</html>

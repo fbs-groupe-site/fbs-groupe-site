@@ -4,372 +4,469 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FBS GROUPE SARLU - Informatique et formation</title>
-
-<!-- Feuille de style principale -->
+  <meta name="description" content="Formations informatiques, bureautique, maintenance, infographie, logiciels avancés et multimédia avec FBS GROUPE SARLU à Kankan.">
 
   <link rel="stylesheet" href="style.css">
-
-  <!-- Bibliothèque d’icônes -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-  <!-- En-tête -->
-  <header>
+  <header class="entete">
     <div class="conteneur contenu-entete">
-      <div class="logo">
+
+      <a href="index.html" class="logo">
         <img src="IMAGES/Logo.png" alt="Logo FBS GROUPE SARLU">
         <div class="texte-logo">
-        <h1>FBS GROUPE SARLU</h1>
-        <p>Informatique et formation</p>
-      </div>
-    </div>
-      <!-- Bouton du menu -->
+          <h1>FBS GROUPE SARLU</h1>
+          <p>Informatique et formation</p>
+        </div>
+      </a>
+
       <button class="bouton-menu" id="boutonMenu" aria-label="Ouvrir le menu">
         <i class="fas fa-bars"></i>
       </button>
 
-      <!-- Navigation  des pages en tete-->
-      <nav>
+      <nav class="navigation">
         <ul id="menu">
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="informatique.html">Informatique</a></li>
+          <li><a class="actif" href="informatique.html">Informatique</a></li>
           <li><a href="construction.html">Construction</a></li>
           <li><a href="services.html">Autres services</a></li>
           <li><a href="inscription.html">Inscription</a></li>
         </ul>
       </nav>
+
     </div>
   </header>
 
-  <!-- Bannière de page -->
-  <section class="banniere-page informatique">
-    <div class="conteneur">
-      <h2>Informatique et formation</h2>
-      <p>Des services pour accompagner les besoins numériques, la formation et la communication visuelle.</p>
-    </div>
-  </section>
+  <main>
 
-  <!-- Présentation des differents  domaine du centre-->
-  <section>
-    <div class="conteneur">
-      <div class="image-texte">
-        <img src="IMAGES/FBS2.jpeg" alt="Illustration informatique" title="Informatique">
-        <div>
-          <h3>Présentation du domaine</h3>
-          <p>
-            FBS GROUPE SARLU propose des services dans le domaine informatique afin d’aider
-            les clients à mieux utiliser les outils numériques dans leurs activités quotidiennes.
-          </p>
-          <p>
-            Ces services concernent la formation, la maintenance de matériel, la création graphique
-            et la production de supports de communication.
-          </p>
+    <section class="banniere-page informatique">
+      <div class="conteneur">
+        <span class="badge">Formation • Maintenance • Infographie</span>
+        <h2>Informatique et formation</h2>
+        <p>Des services pratiques pour renforcer vos compétences numériques et votre image professionnelle.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="conteneur">
+        <div class="image-texte">
+          <img src="IMAGES/FBS2.jpeg" alt="Illustration informatique">
+          <div>
+            <h3>Présentation du domaine</h3>
+            <p>
+              FBS GROUPE SARLU propose des services informatiques destinés aux étudiants,
+              professionnels, entrepreneurs et particuliers.
+            </p>
+            <p>
+              Nos prestations concernent la formation, la maintenance informatique,
+              la bureautique, l’infographie et la création de supports de communication.
+            </p>
+            <a href="inscription.html" class="bouton">S’inscrire à une formation</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Liste des services -->
-  <section>
-    <div class="conteneur">
-      <div class="titre-section">
-        <h2>Nos services informatiques</h2>
+    <section class="section-claire">
+      <div class="conteneur">
+        <div class="titre-section">
+          <span>Services</span>
+          <h2>Nos services informatiques</h2>
+        </div>
+
+        <div class="grille-3">
+
+          <article class="carte">
+            <i class="fas fa-desktop"></i>
+            <h3>Formation informatique</h3>
+            <p>Initiation à l’ordinateur, bureautique, internet et outils numériques utiles.</p>
+          </article>
+
+          <article class="carte">
+            <i class="fas fa-screwdriver-wrench"></i>
+            <h3>Maintenance informatique</h3>
+            <p>Diagnostic, dépannage, installation de logiciels et entretien du matériel.</p>
+          </article>
+
+          <article class="carte">
+            <i class="fas fa-pen-nib"></i>
+            <h3>Infographie</h3>
+            <p>Création de logos, affiches, cartes de visite, flyers, autocollants et supports visuels.</p>
+          </article>
+
+        </div>
       </div>
-
-      <div class="grille-3">
-        <div class="carte">
-          <i class="fas fa-desktop"></i>
-          <h3>Formation en informatique</h3>
-          <p>Initiation à l’ordinateur, bureautique, internet et outils numériques utiles au travail et aux études.</p>
-        </div>
-
-        <div class="carte">
-          <i class="fas fa-screwdriver-wrench"></i>
-          <h3>Maintenance informatique</h3>
-          <p>Diagnostic, dépannage, installation de logiciels et entretien du matériel informatique.</p>
-        </div>
-
-        <div class="carte">
-          <i class="fas fa-pen-nib"></i>
-          <h3>Infographie et création visuelle</h3>
-          <p>Création de logos, affiches, cartes de visite et cartes de mariage, flyers, autocollants et autres supports de communication.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Utilité du service -->
-  <section>
-    <div class="conteneur">
-      <h2 class="titre-simple">Pourquoi ce service est utile ?</h2>
-      <p>
-        Aujourd’hui, l’informatique est présente dans presque tous les secteurs. Ce domaine permet
-        aux clients de mieux communiquer, de mieux organiser leur travail et d’améliorer leur image professionnelle.
-      </p>
-    </div>
-  </section>
-
-  <section class="formations-info">
+    </section>
+    
+    <!-- ================= CENTRE DE FORMATION PRO ================= -->
+<section class="centre-formation-pro">
   <div class="conteneur">
+
     <div class="titre-section">
-      <h2>Nos formations en informatique</h2>
+      <span>Centre de formation</span>
+      <h2>Apprendre avec des supports modernes</h2>
       <p>
-        Nous proposons des formations pratiques pour débutants, étudiants,
-        professionnels et entrepreneurs.
+        Vidéos, exercices pratiques, accompagnement et formations adaptées aux débutants.
       </p>
     </div>
 
-    <!-- Bureautique -->
-    <h3 class="titre-categorie">Bureautique</h3>
-    <div class="grille-formations">
+    <div class="grille-videos-pro">
 
-      <div class="formation">
-        <h4>Windows - Word - Excel</h4>
-        <p><strong>Prix :</strong> 300 000 GNF</p>
-        <p><strong>Durée :</strong> 2 mois</p>
-        <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
-        <p>Formation idéale pour apprendre les bases de l’ordinateur et des logiciels bureautiques.</p>
-      </div>
+      <article class="video-pro">
+        <div class="cadre-video">
+          <iframe 
+            src="https://www.youtube.com/embed/GJyvdDf45zA"
+            title="Initiation à l'intelligence artificielle"
+            allowfullscreen>
+          </iframe>
+        </div>
 
-      <div class="formation">
-        <h4>PowerPoint - Publisher</h4>
-        <p><strong>Prix :</strong> 300 000 GNF</p>
-        <p><strong>Durée :</strong> 1 mois</p>
-        <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
-        <p>Pour créer des présentations, affiches, cartes, documents visuels et supports professionnels.</p>
-      </div>
+        <div class="contenu-video-pro">
+          <span>Débutant</span>
+          <h3>Initiation à l’informatique</h3>
+          <p>Découvrir l’ordinateur, le clavier, internet et les bases numériques.</p>
+          <a href="inscription.html" class="bouton">S’inscrire</a>
+        </div>
+      </article>
 
-      <div class="formation">
-        <h4>Access</h4>
-        <p><strong>Prix :</strong> 350 000 GNF</p>
-        <p><strong>Durée :</strong> 1 mois</p>
-        <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
-        <p>Pour apprendre à créer et gérer des bases de données simples.</p>
-      </div>
+      <article class="video-pro">
+        <div class="cadre-video">
+          <iframe 
+            src="https://www.youtube.com/embed/GJyvdDf45zA"
+            title="Création de site web"
+            allowfullscreen>
+          </iframe>
+        </div>
 
-      <div class="formation">
-        <h4>Outlook</h4>
-        <p><strong>Prix :</strong> 100 000 GNF</p>
-        <p><strong>Durée :</strong> 1 semaine</p>
-        <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
-        <p>Gestion des e-mails, calendrier, rendez-vous et communication professionnelle.</p>
-      </div>
+        <div class="contenu-video-pro">
+          <span>Web</span>
+          <h3>Création de site web</h3>
+          <p>Apprendre les bases du HTML, du CSS et de la création de pages web.</p>
+          <a href="inscription.html" class="bouton">S’inscrire</a>
+        </div>
+      </article>
 
-      <div class="formation">
-        <h4>Exploitation Internet</h4>
-        <p><strong>Prix :</strong> 150 000 GNF</p>
-        <p><strong>Durée :</strong> 1 semaine</p>
-        <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
-        <p>Utilisation d’internet, recherche d’informations, navigation et outils numériques.</p>
-      </div>
+      <article class="video-pro">
+        <div class="cadre-video">
+          <iframe 
+            src="https://www.youtube.com/embed/r-uOLxNrNk8"
+            title="Formation Excel"
+            allowfullscreen>
+          </iframe>
+        </div>
 
-      <div class="formation">
-        <h4>Tap Touch</h4>
-        <p><strong>Prix :</strong> 100 000 GNF</p>
-        <p><strong>Durée :</strong> 1 mois</p>
-        <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
-        <p>Formation de saisie rapide au clavier pour améliorer la vitesse de frappe.</p>
-      </div>
-
-    </div>
-
-    <!-- Logiciels avancés -->
-    <h3 class="titre-categorie">Logiciels avancés</h3>
-    <div class="grille-formations">
-
-      <div class="formation">
-        <h4>Excel Avancé</h4>
-        <p><strong>Prix :</strong> 350 000 GNF</p>
-        <p><strong>Durée :</strong> 1 mois</p>
-        <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
-        <p>Fonctions avancées, tableaux, calculs, organisation et traitement des données.</p>
-      </div>
-
-      <div class="formation">
-        <h4>PowerPoint Avancé</h4>
-        <p><strong>Prix :</strong> 150 000 GNF</p>
-        <p><strong>Durée :</strong> 2 semaines</p>
-        <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
-        <p>Création de présentations modernes avec effets, animation et supports vidéo.</p>
-      </div>
-
-      <div class="formation">
-        <h4>Publipostage et Références</h4>
-        <p><strong>Prix :</strong> 150 000 GNF</p>
-        <p><strong>Durée :</strong> 2 semaines</p>
-        <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
-        <p>Création automatique de lettres, listes, références et documents administratifs.</p>
-      </div>
+        <div class="contenu-video-pro">
+          <span>Bureautique</span>
+          <h3>Formation Excel</h3>
+          <p>Maîtriser les tableaux, calculs simples, formules et organisation des données.</p>
+          <a href="inscription.html" class="bouton">S’inscrire</a>
+        </div>
+      </article>
 
     </div>
 
-    <!-- Logiciels comptables -->
-    <h3 class="titre-categorie">Logiciels comptables</h3>
-    <div class="grille-formations">
-
-      <div class="formation">
-        <h4>SPSS Statistic v21</h4>
-        <p><strong>Prix :</strong> 300 000 GNF</p>
-        <p><strong>Durée :</strong> 1 mois</p>
-        <p>Analyse statistique de données pour étudiants, chercheurs et professionnels.</p>
-      </div>
-
-      <div class="formation">
-        <h4>SAGE Comptabilité i7</h4>
-        <p><strong>Prix :</strong> 400 000 GNF</p>
-        <p><strong>Durée :</strong> 1 mois 1 semaine</p>
-        <p>Apprentissage de la comptabilité informatisée et de la gestion comptable.</p>
-      </div>
-
-      <div class="formation">
-        <h4>Gestion Commerciale</h4>
-        <p><strong>Prix :</strong> 400 000 GNF</p>
-        <p><strong>Durée :</strong> 1 mois 1 semaine</p>
-        <p>Gestion des produits, ventes, stocks, clients et opérations commerciales.</p>
-      </div>
-
-      <div class="formation">
-        <h4>Marketing Commercial</h4>
-        <p><strong>Prix :</strong> 500 000 GNF</p>
-        <p><strong>Durée :</strong> 1 mois 2 semaines</p>
-        <p>Formation orientée vers la vente, la communication commerciale et le marketing.</p>
-      </div>
-
-    </div>
-
-    <!-- Infographie / multimédia -->
-    <h3 class="titre-categorie">Infographie et multimédia</h3>
-    <div class="grille-formations">
-
-      <div class="formation">
-        <h4>Photoshop CS6</h4>
-        <p><strong>Prix :</strong> 400 000 GNF</p>
-        <p><strong>Durée :</strong> 1 mois</p>
-        <p>Montage photo, retouche d’images et création graphique.</p>
-      </div>
-
-      <div class="formation">
-        <h4>Filmora 9</h4>
-        <p><strong>Prix :</strong> 250 000 GNF</p>
-        <p><strong>Durée :</strong> 1 semaine</p>
-        <p>Montage vidéo simple, pratique et accessible aux débutants.</p>
-      </div>
-
-      <div class="formation">
-        <h4>Cyber Link 8</h4>
-        <p><strong>Prix :</strong> 250 000 GNF</p>
-        <p><strong>Durée :</strong> 1 semaine</p>
-        <p>Outils multimédias pour la création et le traitement de contenus numériques.</p>
-      </div>
-
-    </div>
-
-    <!-- Bloc inscription -->
-    <div class="infos-inscription">
-      <h3>Informations utiles pour l'inscription</h3>
-      <p><strong>Pièces à fournir :</strong> 3 photos d’identité</p>
-      <p><strong>Paiement :</strong> 50% à l’inscription et 50% au cours de la formation</p>
-      <p><strong>Badge d'inscription :</strong> 20 000 GNF</p>
-      <p><strong>Organisation :</strong> Le centre tient compte de vos occupations pour élaborer votre emploi du temps.</p>
-      <p><strong>NB :</strong> Aucun remboursement n’est possible après l’inscription.</p>
-    </div>
-  </div>
-</section>
-<!-- Bloc PDF / Dépliant -->
-<section class="bloc-pdf">
-  <div class="conteneur">
-    <div class="titre-section">
-      <h2>Consulter notre dépliant pour plus d'informations</h2>
-      <p>
-        Ce document présente nos formations nos offres, prix, les durées,  
-        les conditions d’inscription et les contacts du centre. 
-      </p>
-    </div>
-
-    <div class="carte-pdf">
-      <div>
-        <i class="fas fa-file-pdf"></i>
-      </div>
-      <div>
-        <p>
-          Dépliant officiel.
-        </p>
-        <a href="PDF/FICHE_RENSEIGNEMENT.pdf" class="bouton" target="_blank">
-          Télécharger le dépliant.
-        </a>
-      </div>
-    </div>
   </div>
 </section>
 
-<!-- Pied de page -->
-<footer class="footer">
-  <div class="conteneur footer-contenu">
+<!-- ================= GALERIE PROFESSIONNELLE ================= -->
+<section class="galerie-pro">
+  <div class="conteneur">
 
-    <div class="footer-bloc">
-      <h3>FBS GROUPE SARLU</h3>
-      <p>Des services simples, sérieux et professionnels.</p>
-      <p>Formation, construction, transport, logistique et autres prestations.</p>
-    </div>
-
-    <div class="footer-bloc">
-      <h4>Contact</h4>
-
+    <div class="titre-section">
+      <span>Galerie</span>
+      <h2>Nos formations en images</h2>
       <p>
-        <i class="fas fa-phone"></i>
-        <a href="tel:+224623854135">+224 623 85 41 35</a>
-      </p>
-
-      <p>
-        <i class="fas fa-phone"></i>
-        <a href="tel:+224621744176">+224 621 74 41 76</a>
-      </p>
-
-      <p>
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:fbsgroupsarlu@gmail.com">fbsgroupsarlu@gmail.com</a>
-      </p>
-
-      <p>
-        <i class="fab fa-whatsapp"></i>
-        <a href="https://wa.me/224623854135" target="_blank">Contact WhatsApp</a>
+        Un aperçu des séances de formation, des exercices pratiques et de l’encadrement.
       </p>
     </div>
 
-    <div class="footer-bloc">
-      <h4>Adresse</h4>
-      <p><i class="fas fa-map-marker-alt"></i> Kankan, Guinée</p>
-      <p>Entre l’UJNK et l’Hôtel Buffet de la Gare</p>
+    <div class="grille-galerie-pro">
+
+      <article class="photo-pro">
+        <img src="IMAGES/formation1.jpg" alt="Formation informatique">
+        <div class="overlay-photo">
+          <h3>Formation pratique</h3>
+          <p>Apprentissage pas à pas</p>
+        </div>
+      </article>
+
+      <article class="photo-pro">
+        <img src="IMAGES/formation2.jpg" alt="Cours bureautique">
+        <div class="overlay-photo">
+          <h3>Bureautique</h3>
+          <p>Word, Excel, PowerPoint</p>
+        </div>
+      </article>
+
+      <article class="photo-pro">
+        <img src="IMAGES/formation3.jpg" alt="Salle informatique">
+        <div class="overlay-photo">
+          <h3>Salle équipée</h3>
+          <p>Environnement adapté</p>
+        </div>
+      </article>
+
+      <article class="photo-pro">
+        <img src="IMAGES/formation4.jpg" alt="Formation Excel">
+        <div class="overlay-photo">
+          <h3>Exercices guidés</h3>
+          <p>Travaux pratiques</p>
+        </div>
+      </article>
+
+      <article class="photo-pro">
+        <img src="IMAGES/formation5.jpg" alt="Apprentissage informatique">
+        <div class="overlay-photo">
+          <h3>Suivi personnalisé</h3>
+          <p>Accompagnement sérieux</p>
+        </div>
+      </article>
+
+      <article class="photo-pro">
+        <img src="IMAGES/formation6.jpg" alt="Formation en groupe">
+        <div class="overlay-photo">
+          <h3>Formation en groupe</h3>
+          <p>Partage et progression</p>
+        </div>
+      </article>
+
     </div>
 
-    <div class="footer-bloc">
-      <h4>Liens utiles</h4>
-      <p><a href="index.html">Accueil</a></p>
-      <p><a href="informatique.html">Formations</a></p>
-      <p><a href="inscription.html">Inscription</a></p>
-      <p><a href="services.html#contact">Contact</a></p>
-    </div>
+  </div>
+</section>
 
-    <div class="footer-bloc">
-      <h4>Réseaux sociaux</h4>
-      <div class="reseaux">
-        <a href="https://www.facebook.com/share/1CaRw7N6yn/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://wa.me/224623854135" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    <section class="formations-info">
+      <div class="conteneur">
+        <div class="titre-section">
+          <span>Catalogue</span>
+          <h2>Nos formations en informatique</h2>
+          <p>Des formations pratiques pour débutants, étudiants, professionnels et entrepreneurs.</p>
+        </div>
+
+        <h3 class="titre-categorie">Bureautique</h3>
+        <div class="grille-formations">
+
+          <article class="formation">
+            <h4>Windows - Word - Excel</h4>
+            <p><strong>Prix :</strong> 300 000 GNF</p>
+            <p><strong>Durée :</strong> 2 mois</p>
+            <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
+            <p>Formation idéale pour apprendre les bases de l’ordinateur et de la bureautique.</p>
+          </article>
+
+          <article class="formation">
+            <h4>PowerPoint - Publisher</h4>
+            <p><strong>Prix :</strong> 300 000 GNF</p>
+            <p><strong>Durée :</strong> 1 mois</p>
+            <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
+            <p>Création de présentations, affiches, cartes et supports professionnels.</p>
+          </article>
+
+          <article class="formation">
+            <h4>Access</h4>
+            <p><strong>Prix :</strong> 350 000 GNF</p>
+            <p><strong>Durée :</strong> 1 mois</p>
+            <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
+            <p>Création et gestion de bases de données simples.</p>
+          </article>
+
+          <article class="formation">
+            <h4>Outlook</h4>
+            <p><strong>Prix :</strong> 100 000 GNF</p>
+            <p><strong>Durée :</strong> 1 semaine</p>
+            <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
+            <p>Gestion des e-mails, calendrier, rendez-vous et communication professionnelle.</p>
+          </article>
+
+          <article class="formation">
+            <h4>Exploitation Internet</h4>
+            <p><strong>Prix :</strong> 150 000 GNF</p>
+            <p><strong>Durée :</strong> 1 semaine</p>
+            <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
+            <p>Navigation, recherche d’informations et utilisation des outils numériques.</p>
+          </article>
+
+          <article class="formation">
+            <h4>Tap Touch</h4>
+            <p><strong>Prix :</strong> 100 000 GNF</p>
+            <p><strong>Durée :</strong> 1 mois</p>
+            <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
+            <p>Formation pour améliorer la vitesse et la précision de frappe au clavier.</p>
+          </article>
+
+        </div>
+
+        <h3 class="titre-categorie">Logiciels avancés</h3>
+        <div class="grille-formations">
+
+          <article class="formation">
+            <h4>Excel avancé</h4>
+            <p><strong>Prix :</strong> 350 000 GNF</p>
+            <p><strong>Durée :</strong> 1 mois</p>
+            <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
+            <p>Fonctions avancées, tableaux, calculs, organisation et traitement des données.</p>
+          </article>
+
+          <article class="formation">
+            <h4>PowerPoint avancé</h4>
+            <p><strong>Prix :</strong> 150 000 GNF</p>
+            <p><strong>Durée :</strong> 2 semaines</p>
+            <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
+            <p>Création de présentations modernes avec animations et supports multimédias.</p>
+          </article>
+
+          <article class="formation">
+            <h4>Publipostage et références</h4>
+            <p><strong>Prix :</strong> 150 000 GNF</p>
+            <p><strong>Durée :</strong> 2 semaines</p>
+            <p><strong>Inscription + badge :</strong> 20 000 GNF</p>
+            <p>Création automatique de lettres, listes, références et documents administratifs.</p>
+          </article>
+
+        </div>
+
+        <h3 class="titre-categorie">Logiciels statistiques et comptables</h3>
+        <div class="grille-formations">
+
+          <article class="formation">
+            <h4>SPSS Statistic v21</h4>
+            <p><strong>Prix :</strong> 300 000 GNF</p>
+            <p><strong>Durée :</strong> 1 mois</p>
+            <p>Analyse statistique de données pour étudiants, chercheurs et professionnels.</p>
+          </article>
+
+          <article class="formation">
+            <h4>SAGE Comptabilité i7</h4>
+            <p><strong>Prix :</strong> 400 000 GNF</p>
+            <p><strong>Durée :</strong> 1 mois 1 semaine</p>
+            <p>Apprentissage de la comptabilité informatisée et de la gestion comptable.</p>
+          </article>
+
+          <article class="formation">
+            <h4>Gestion commerciale</h4>
+            <p><strong>Prix :</strong> 400 000 GNF</p>
+            <p><strong>Durée :</strong> 1 mois 1 semaine</p>
+            <p>Gestion des produits, ventes, stocks, clients et opérations commerciales.</p>
+          </article>
+
+          <article class="formation">
+            <h4>Marketing commercial</h4>
+            <p><strong>Prix :</strong> 500 000 GNF</p>
+            <p><strong>Durée :</strong> 1 mois 2 semaines</p>
+            <p>Formation orientée vers la vente, la communication commerciale et le marketing.</p>
+          </article>
+
+        </div>
+
+        <h3 class="titre-categorie">Infographie et multimédia</h3>
+        <div class="grille-formations">
+
+          <article class="formation">
+            <h4>Photoshop CS6</h4>
+            <p><strong>Prix :</strong> 400 000 GNF</p>
+            <p><strong>Durée :</strong> 1 mois</p>
+            <p>Montage photo, retouche d’images et création graphique.</p>
+          </article>
+
+          <article class="formation">
+            <h4>Filmora 9</h4>
+            <p><strong>Prix :</strong> 250 000 GNF</p>
+            <p><strong>Durée :</strong> 1 semaine</p>
+            <p>Montage vidéo simple, pratique et accessible aux débutants.</p>
+          </article>
+
+          <article class="formation">
+            <h4>CyberLink 8</h4>
+            <p><strong>Prix :</strong> 250 000 GNF</p>
+            <p><strong>Durée :</strong> 1 semaine</p>
+            <p>Outils multimédias pour la création et le traitement de contenus numériques.</p>
+          </article>
+
+        </div>
+
+        <div class="infos-inscription">
+          <h3>Informations utiles pour l’inscription</h3>
+          <p><strong>Pièces à fournir :</strong> 3 photos d’identité</p>
+          <p><strong>Paiement :</strong> 50% à l’inscription et 50% au cours de la formation</p>
+          <p><strong>Badge d’inscription :</strong> 20 000 GNF</p>
+          <p><strong>Organisation :</strong> le centre tient compte de vos occupations pour établir votre emploi du temps.</p>
+          <p><strong>NB :</strong> aucun remboursement n’est possible après l’inscription.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="bloc-pdf">
+      <div class="conteneur">
+        <div class="titre-section">
+          <span>Document</span>
+          <h2>Consulter notre dépliant</h2>
+          <p>Le document présente nos formations, prix, durées, conditions d’inscription et contacts.</p>
+        </div>
+
+        <div class="carte-pdf">
+          <i class="fas fa-file-pdf"></i>
+          <div>
+            <h3>Dépliant officiel</h3>
+            <p>Téléchargez la fiche de renseignement complète du centre.</p>
+            <a href="PDF/FICHE_RENSEIGNEMENT.pdf" class="bouton" target="_blank">Télécharger le dépliant</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Même footer que index -->
+  <footer class="footer">
+    <div class="conteneur footer-contenu">
+      <div class="footer-bloc">
+        <h3>FBS GROUPE SARLU</h3>
+        <p>Des services simples, sérieux et professionnels.</p>
+        <p>Formation, construction, transport, logistique et autres prestations.</p>
+      </div>
+
+      <div class="footer-bloc">
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone"></i><a href="tel:+224623854135">+224 623 85 41 35</a></p>
+        <p><i class="fas fa-phone"></i><a href="tel:+224621744176">+224 621 74 41 76</a></p>
+        <p><i class="fas fa-envelope"></i><a href="mailto:fbsgroupsarlu@gmail.com">fbsgroupsarlu@gmail.com</a></p>
+        <p><i class="fab fa-whatsapp"></i><a href="https://wa.me/224623854135" target="_blank">WhatsApp</a></p>
+      </div>
+
+      <div class="footer-bloc">
+        <h4>Adresse</h4>
+        <p><i class="fas fa-map-marker-alt"></i>Kankan, Guinée</p>
+        <p>Entre l’UJNK et l’Hôtel Buffet de la Gare</p>
+      </div>
+
+      <div class="footer-bloc">
+        <h4>Liens utiles</h4>
+        <p><a href="index.html">Accueil</a></p>
+        <p><a href="informatique.html">Formations</a></p>
+        <p><a href="inscription.html">Inscription</a></p>
+        <p><a href="services.html#contact">Contact</a></p>
+      </div>
+
+      <div class="footer-bloc">
+        <h4>Réseaux sociaux</h4>
+        <div class="reseaux">
+          <a href="https://www.facebook.com/share/1CaRw7N6yn/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/224623854135" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
       </div>
     </div>
 
-  </div>
+    <div class="footer-bas">
+      <p>&copy; 2026 FBS GROUPE SARLU - Tous droits réservés</p>
+    </div>
+  </footer>
 
-  <div class="footer-bas">
-    <p>&copy; 2026 FBS GROUPE SARLU - Tous droits réservés</p>
-  </div>
-</footer>
-
-  <!-- Script -->
   <script src="script.js"></script>
-
- </body>
+</body>
 </html>

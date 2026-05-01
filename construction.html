@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>FBS GROUPE SARLU - Construction et immobilier</title>
+  <meta name="description" content="FBS GROUPE SARLU propose des services de construction, rénovation, gestion immobilière et fourniture de matériels à Kankan en Guinée.">
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -11,171 +13,195 @@
 
 <body>
 
-  <!-- En-tête -->
-  <header>
-    <div class="conteneur contenu-entete">
+<header class="entete">
+  <div class="conteneur contenu-entete">
 
-      <div class="logo">
-        <img src="IMAGES/Logo.png" alt="Logo FBS GROUPE SARLU">
-        <div class="texte-logo">
-          <h1>FBS GROUPE SARLU</h1>
-          <p>Construction et immobilier</p>
-        </div>
+    <a href="index.html" class="logo">
+      <img src="IMAGES/Logo.png" alt="Logo FBS GROUPE SARLU">
+      <div class="texte-logo">
+        <h1>FBS GROUPE SARLU</h1>
+        <p>Construction et immobilier</p>
       </div>
+    </a>
 
-      <button class="bouton-menu" id="boutonMenu" aria-label="Ouvrir le menu">
-        <i class="fas fa-bars"></i>
-      </button>
+    <button class="bouton-menu" id="boutonMenu">
+      <i class="fas fa-bars"></i>
+    </button>
 
-      <nav>
-        <ul id="menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="informatique.html">Informatique</a></li>
-          <li><a href="construction.html">Construction</a></li>
-          <li><a href="services.html">Autres services</a></li>
-          <li><a href="inscription.html">Inscription</a></li>
-        </ul>
-      </nav>
+    <nav class="navigation">
+      <ul id="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="informatique.html">Informatique</a></li>
+        <li><a class="actif" href="construction.html">Construction</a></li>
+        <li><a href="services.html">Autres services</a></li>
+        <li><a href="inscription.html">Inscription</a></li>
+      </ul>
+    </nav>
 
-    </div>
-  </header>
+  </div>
+</header>
 
-  <!-- Bannière -->
+<main>
+
+  <!-- BANNIÈRE -->
   <section class="banniere-page construction">
     <div class="conteneur">
+      <span class="badge">BTP • Immobilier • Équipements</span>
       <h2>Construction et immobilier</h2>
-      <p>Des solutions pour les travaux, les bâtiments et les besoins en équipements.</p>
+      <p>
+        Des solutions fiables pour vos projets de construction, de rénovation
+        et de gestion immobilière.
+      </p>
     </div>
   </section>
 
-  <!-- Présentation -->
+  <!-- PRÉSENTATION -->
   <section>
     <div class="conteneur">
+
       <div class="image-texte">
-        <img src="IMAGES/photo_ construction.jpg" alt="Illustration construction" title="Chantier en construction">
+
+        <img src="IMAGES/photo_construction.jpg" alt="Chantier de construction">
 
         <div>
           <h3>Présentation du domaine</h3>
+
           <p>
-            FBS GROUPE SARLU intervient dans le secteur de la construction pour accompagner
-            différents projets de bâtiments, de rénovation et d’équipement.
+            FBS GROUPE SARLU intervient dans le domaine du bâtiment pour
+            accompagner vos projets de construction, de rénovation et d’équipement.
           </p>
+
           <p>
-            L’entreprise peut également participer à la gestion immobilière et à la fourniture
-            de matériels adaptés aux besoins des chantiers ou des bureaux.
+            Nous proposons également des services de gestion immobilière et de
+            fourniture de matériels adaptés aux besoins des chantiers.
           </p>
+
+          <a href="inscription.html" class="bouton">
+            Demander un devis
+          </a>
+
         </div>
+
       </div>
+
     </div>
   </section>
 
-  <!-- Services -->
-  <section>
+  <!-- SERVICES -->
+  <section class="section-claire">
     <div class="conteneur">
+
       <div class="titre-section">
-        <h2>Nos services en construction</h2>
+        <span>Nos services</span>
+        <h2>Services en construction</h2>
       </div>
 
       <div class="grille-3">
 
-        <div class="carte">
+        <article class="carte">
           <i class="fas fa-house"></i>
           <h3>Construction et rénovation</h3>
-          <p>Travaux de bâtiment, amélioration de locaux et réhabilitation d’espaces existants.</p>
-        </div>
+          <p>
+            Réalisation de bâtiments, rénovation de maisons et amélioration
+            d’espaces professionnels.
+          </p>
+        </article>
 
-        <div class="carte">
+        <article class="carte">
           <i class="fas fa-city"></i>
           <h3>Gestion immobilière</h3>
-          <p>Accompagnement dans la valorisation et le suivi de biens immobiliers.</p>
-        </div>
+          <p>
+            Suivi, gestion et valorisation de biens immobiliers
+            pour particuliers et entreprises.
+          </p>
+        </article>
 
-        <div class="carte">
+        <article class="carte">
           <i class="fas fa-toolbox"></i>
           <h3>Fourniture de matériels</h3>
-          <p>Mise à disposition de matériels de construction et de mobilier de bureau.</p>
-        </div>
+          <p>
+            Mise à disposition d’équipements de construction
+            et de mobilier de bureau.
+          </p>
+        </article>
 
       </div>
+
     </div>
   </section>
 
-  <!-- Utilité -->
+  <!-- UTILITÉ -->
   <section>
     <div class="conteneur">
-      <h2 class="titre-simple">Pourquoi ce service est utile ?</h2>
+
+      <h2 class="titre-simple">Pourquoi choisir nos services ?</h2>
+
       <p>
-        Le secteur du bâtiment est essentiel pour le développement local. Il permet de répondre
-        aux besoins en infrastructures, en logements et en aménagements professionnels.
+        Le secteur du bâtiment est essentiel pour le développement local.
+        FBS GROUPE SARLU vous accompagne avec des solutions fiables,
+        adaptées et durables pour vos projets.
       </p>
+
+      <p>
+        Nous garantissons un travail sérieux, un suivi rigoureux et
+        une qualité conforme à vos attentes.
+      </p>
+
     </div>
   </section>
 
-<!-- Pied de page -->
-<footer class="footer">
-  <div class="conteneur footer-contenu">
+</main>
 
-    <div class="footer-bloc">
-      <h3>FBS GROUPE SARLU</h3>
-      <p>Des services simples, sérieux et professionnels.</p>
-      <p>Formation, construction, transport, logistique et autres prestations.</p>
-    </div>
+<!-- FOOTER -->
+  <footer class="footer">
+    <div class="conteneur footer-contenu">
 
-    <div class="footer-bloc">
-      <h4>Contact</h4>
-
-      <p>
-        <i class="fas fa-phone"></i>
-        <a href="tel:+224623854135">+224 623 85 41 35</a>
-      </p>
-
-      <p>
-        <i class="fas fa-phone"></i>
-        <a href="tel:+224621744176">+224 621 74 41 76</a>
-      </p>
-
-      <p>
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:fbsgroupsarlu@gmail.com">fbsgroupsarlu@gmail.com</a>
-      </p>
-
-      <p>
-        <i class="fab fa-whatsapp"></i>
-        <a href="https://wa.me/224623854135" target="_blank">Contact WhatsApp</a>
-      </p>
-    </div>
-
-    <div class="footer-bloc">
-      <h4>Adresse</h4>
-      <p><i class="fas fa-map-marker-alt"></i> Kankan, Guinée</p>
-      <p>Entre l’UJNK et l’Hôtel Buffet de la Gare</p>
-    </div>
-
-    <div class="footer-bloc">
-      <h4>Liens utiles</h4>
-      <p><a href="index.html">Accueil</a></p>
-      <p><a href="informatique.html">Formations</a></p>
-      <p><a href="inscription.html">Inscription</a></p>
-      <p><a href="services.html#contact">Contact</a></p>
-    </div>
-
-    <div class="footer-bloc">
-      <h4>Réseaux sociaux</h4>
-      <div class="reseaux">
-        <a href="https://www.facebook.com/share/1CaRw7N6yn/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://wa.me/224623854135" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <div class="footer-bloc">
+        <h3>FBS GROUPE SARLU</h3>
+        <p>Des services simples, sérieux et professionnels.</p>
+        <p>Formation, construction, transport, logistique et autres prestations.</p>
       </div>
+
+      <div class="footer-bloc">
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone"></i><a href="tel:+224623854135">+224 623 85 41 35</a></p>
+        <p><i class="fas fa-phone"></i><a href="tel:+224621744176">+224 621 74 41 76</a></p>
+        <p><i class="fas fa-envelope"></i><a href="mailto:fbsgroupsarlu@gmail.com">fbsgroupsarlu@gmail.com</a></p>
+        <p><i class="fab fa-whatsapp"></i><a href="https://wa.me/224623854135" target="_blank">WhatsApp</a></p>
+      </div>
+
+      <div class="footer-bloc">
+        <h4>Adresse</h4>
+        <p><i class="fas fa-map-marker-alt"></i>Kankan, Guinée</p>
+        <p>Entre l’UJNK et l’Hôtel Buffet de la Gare</p>
+      </div>
+
+      <div class="footer-bloc">
+        <h4>Liens utiles</h4>
+        <p><a href="index.html">Accueil</a></p>
+        <p><a href="informatique.html">Formations</a></p>
+        <p><a href="inscription.html">Inscription</a></p>
+        <p><a href="services.html#contact">Contact</a></p>
+      </div>
+
+      <div class="footer-bloc">
+        <h4>Réseaux sociaux</h4>
+        <div class="reseaux">
+          <a href="https://www.facebook.com/share/1CaRw7N6yn/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/224623854135" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
     </div>
 
-  </div>
+    <div class="footer-bas">
+      <p>&copy; 2026 FBS GROUPE SARLU - Tous droits réservés</p>
+    </div>
+  </footer>
 
-  <div class="footer-bas">
-    <p>&copy; 2026 FBS GROUPE SARLU - Tous droits réservés</p>
-  </div>
-</footer>
+<script src="script.js"></script>
 
-  <script src="script.js"></script>
 </body>
 </html>
